@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/components/circle/Circle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/components/character-follow/CharacterFollow.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/components/character-arrive-to/CharacterArriveTo.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/components/target-crosshair/TargetCrosshair.tscn" type="PackedScene" id=4]
+
+[node name="Game" type="Node2D"]
+
+[node name="Circle" parent="." instance=ExtResource( 1 )]
+position = Vector2( 790.036, 144.788 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Circle2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 883.27, 410.631 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Circle3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 294.887, 495.046 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="CharacterFollow" parent="." instance=ExtResource( 2 )]
+position = Vector2( 150.876, 201.198 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="CharacterArriveTo" parent="." instance=ExtResource( 3 )]
+position = Vector2( 60.9775, 416.955 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="TargetCrosshair" parent="." instance=ExtResource( 4 )]
+position = Vector2( -175.755, 583.267 )
+scale = Vector2( 0.5, 0.5 )
